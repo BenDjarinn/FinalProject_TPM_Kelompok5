@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Admin Panel</title>
+    <title>Logout - Hackthon</title>
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="logout.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" 
     crossorigin><link href="https://fonts.googleapis.com/css2? 
@@ -27,59 +27,33 @@
             <img src="assets/logo.png" alt="">
             <div class="nav-menu">
                 <ul>
-                    <a href="dashboard.html"><li style="color: var(--gold);">Dashboard</li></a>
-                    <a href="participant.html"><li>Participant</li></a>
+                    <a href="dashboard.html"><li>Dashboard</li></a>
+                    <a href="participant.html"><li >Participant</li></a>
                 </ul>
             </div>
-            <a href="logout.html"><p>Logout</p></a>
+            <a href="logout.html"><p  style="color: var(--gold);">Logout</p></a>
         </div>
     </nav>
+
+    <div id="container" style="display: flex; justify-content: left; padding-left: 100px;">
+        <img src="assets/logout.png" alt="">
+        <div class="title" style=" padding-left: 5px;">
+            <p style="padding-top: 110px; text-align: center;">You’re <span>Leaving..</span> <br> Are you sure? 
+</p>  
+
+            <form>
+                <div class="button1">
+                    <button>Yes, log me out</button>
+                </div>
     
-    <section id="payment-confirmation">
-        <h2>Payment Confirmation</h2>
-        <div class="search">
-            <div class="search-bar">
-                <input type="text" placeholder="Enter team name">
-                <i class="fas fa-search"></i>
-            </div>
-
-            <div class="verify">
-                
-                    <div class="input">
-                        <label for="name" style="display: block;">Nama Team</label>
-                    <input type="text" placeholder="Nama" id="fullName" readonly disabled="disabled">
-                    </div>
-
-                    <div class="input">
-                        <label for="name" style="display: block;">Harga Pendaftaran</label>
-                    <input type="text" placeholder="Rp..." id="fullName" readonly disabled="disabled">
-                    </div>
-
-                    <div class="input" style="margin-right: 1.5rem;">
-                        <label for="name" style="display: block;">Status</label>
-                    <input type="text" placeholder="Verified/Unverified" id="fullName" readonly disabled="disabled">
-
-                    
-                    </div>
-
-                    <div class="btn" style="display: flex; gap :
-                    0.5rem;">
-                        <button id="btn">Verify</button>
-
-                        <button id="btn1"><a href=""></a>View</button>
-                    </div>
-
-                    
-
-                    
-
-                    
-
-                    
-
-            </div>
+                <div class="button2">
+                    <button>Cancel</button>
+                </div>
+            </form>
+               
         </div>
-    </section>
+    </div>
+
     <footer>
         <div class="socmed">
             <div class="socmed-icon">
@@ -100,17 +74,5 @@
         </div>
         
     </footer>
-
-    <script>
-        const btn = document.getElementById('btn');
-
-// 
-
-
-        btn.addEventListener('click', function handleClick(){
-            btn.textContent = 'Verified';
-            btn.style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
-        });
-    </script>
 </body>
 </html>
